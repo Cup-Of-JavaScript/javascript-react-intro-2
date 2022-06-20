@@ -1,10 +1,10 @@
 import React from 'react'
-import './Main.css'
+import {TenCounter} from './Counter'
 
 export const Main = () => {
   return (
     <div>
-      TODO...
+      <TenCounter />
     </div>
   )
 }
