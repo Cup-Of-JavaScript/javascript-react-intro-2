@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 export const DateFetcher = () => {
     let [mdate, getDate] = useState(null)
@@ -8,9 +8,9 @@ export const DateFetcher = () => {
         getDate(mdate);
     }
 
-  return (<div>
-    <button onClick={() => onHandleDate()}>Push</button>
-    UTC Date: {mdate}
+    return (<div>
+        <button onClick={() => onHandleDate()}>Push</button>
+        UTC Date: {mdate}
     </div>
-  )
+    )
 }
