@@ -7,7 +7,7 @@ export const TenCounter = () => {
   const onClick = () => {
     if (counter <= 9) {
       setCounter(++counter);
-    } else setCounter(0);
+    } else {setCounter(0)};
   };
 
   return (
