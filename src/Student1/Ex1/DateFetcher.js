@@ -9,6 +9,10 @@ export const DateFetcher = () => {
 
     const dateHandler = () => {
             setDateFetch(dateTime)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6f0233383701dbc09b20f19fc52e7755fc04b3a4
     }
     return (
         <div>
