@@ -8,9 +8,7 @@ export const DateFetcher = () => {
     let dateTime = df.toUTCString();
 
     const dateHandler = () => {
-        if (dateTime < dateFetch) {
             setDateFetch(dateTime)
-        }
     }
     return (
         <div>
