@@ -7,7 +7,9 @@ export const UpDownCounter = () => {
   const onHandleClick = (direction) => {
     if (direction === "down") {
       setCount(--count);
-    } else setCount(++count);
+    } else {
+      setCount(++count);
+    }
   };
 
   return (
