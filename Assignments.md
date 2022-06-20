@@ -23,7 +23,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <DateFetcher />
+    <div>
+      <DateFetcher />
+    </div>
   )
 }
 ```
@@ -45,7 +47,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <TenCounter />
+    <div>
+      <TenCounter />
+    </div>
   )
 }
 ```
@@ -68,7 +72,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <UpDownCounter />
+    <div>
+      <UpDownCounter />
+    </div>
   )
 }
 ```
@@ -95,7 +101,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <MinMaxCounter />
+    <div>
+      <MinMaxCounter />
+    </div>
   )
 }
 ```
@@ -121,7 +129,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <NumberBuilder />
+    <div>
+      <NumberBuilder />
+    </div>
   )
 }
 ```
@@ -142,7 +152,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <RandomNumber />
+    <div>
+      <RandomNumber />
+    </div>
   )
 }
 ```
@@ -163,7 +175,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <CarCounter />
+    <div>
+      <CarCounter />
+    </div>
   )
 }
 ```
@@ -181,7 +195,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <AddCalculator />
+    <div>
+      <AddCalculator />
+    </div>
   )
 }
 ```
@@ -214,7 +230,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <Buttons />
+    <div>
+      <Buttons />
+    </div>
   )
 }
 ```
@@ -244,7 +262,9 @@ Place this component in your Main component in your Student directory:
 ```
 export const Main = () => {
   return (
-    <Timer />
+    <div>
+      <Timer />
+    </div>
   )
 }
 ```
