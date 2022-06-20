@@ -13,7 +13,7 @@ export const TenCounter = () => {
             }
             console.log(numCounter)
         }
-    
+        
   return (
     <div>
         <button onClick={() => {countHandler()}}>Push</button>
