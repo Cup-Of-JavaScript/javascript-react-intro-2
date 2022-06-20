@@ -3,19 +3,19 @@ import { useState } from 'react'
 import './DateFetcher.scss'
 
 export const DateFetcher = () => {
-    let [datefetch, setDateFetch] = useState('UNKNOWN')
+    let [dateFetch, setDateFetch] = useState('UNKNOWN')
     let df = new Date();
     let dateTime = df.toUTCString();
 
     const dateHandler = () => {
-        if (dateTime < datefetch) {
+        if (dateTime < dateFetch) {
             setDateFetch(dateTime)
         }
     }
     return (
         <div>
             <button onClick={() => { dateHandler() }}>Push</button>
-            UTC Date: {datefetch}
+            UTC Date: {dateFetch}
         </div>
     )
 }
