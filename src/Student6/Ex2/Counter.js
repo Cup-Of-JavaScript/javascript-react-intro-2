@@ -4,8 +4,11 @@ export const TenCounter = () => {
   let [counter, setCounter] = useState(0);
 
   const onhandleClick = () => {
-    if (counter <10) {setCounter(++counter);} 
-    else {setCounter(0);}
+    if (counter < 10) {
+      setCounter(++counter);
+    } else {
+      setCounter(0);
+    }
   }
 
   return (
