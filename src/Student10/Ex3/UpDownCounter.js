@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './UpDownCounter.scss'
 
 export const UpDownCounter = () => {
     let [counter, setCounter] = useState(0);
