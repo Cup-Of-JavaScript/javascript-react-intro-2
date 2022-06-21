@@ -1,25 +1,34 @@
 import React from "react";
 import { useState } from "react";
+import './MinMaxCounter.scss'
 
 export const MinMaxCounter = () => {
   let [count, setCount] = useState(0);
+  let [minValue, setMinValue] = useState(0);
+  let [maxValue, setMaxValue] = useState(0);
 
-  const onHandleClick = (direction, position) => {
-    if (direction === "down") {
-      setCount(--count);
-    } else {
-      setCount(++count);
+  const incrementCount = () => {
+    setCount(++count);
+    if (count > maxValue) {
+      setMaxValue((maxValue = count));
+    }
+  };
+
+  const decrementCount = () => {
+    setCount(--count);
+    if (count < minValue) {
+      setMinValue((minValue = count));
     }
   };
 
   return (
-    <div>
-      <button onClick={() => onHandleClick("down")}>Down</button>
+    <div className= 'counter'>
+      <button className= 'downbutton' onClick={() => decrementCount()}>Down</button>
       {count}
-      <button onClick={() => onHandleClick("up")}>Up</button>
+      <button className='upbutton' onClick={() => incrementCount()}>Up</button>
 
-      <div>Min:{--count}</div>
-      <div>Max:{++count}</div>
+      <div className="min">Min:{minValue}</div>
+      <div className="max">Max:{maxValue}</div>
     </div>
   );
 };
