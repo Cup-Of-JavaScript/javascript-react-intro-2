@@ -25,13 +25,18 @@ export const MinMaxCounter = () => {
     return (
         <div className="middle">
             <div className="box">
-                {/* <div className="MinMax"> */}
-                    <button onClick={() => subHandle()}>Down</button>
-                    <span>{counter}</span>
-                    <button onClick={() => addHandle()}>Up</button>
-                    <p>Min: {lowest}   </p>
-                    <p>Max: {highest}</p>
-                {/* </div> */}
+                <div className="MinMax">
+               
+                    <h1>Which way do you want to go?</h1>
+                    <h2>Up?  or Down??</h2>
+                    <p className='counter'>
+                    {counter}</p>
+                    
+                    <button className="button-down" onClick={() => subHandle()}>-</button>
+                    <button className="button-up" onClick={() => addHandle()}>+</button>
+                    <p>Min: {lowest}  
+                    &nbsp;Max: {highest}</p>
+                </div>
             </div>
         </div>
 
