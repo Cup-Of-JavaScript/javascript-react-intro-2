@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from "react";
 
 
-export const UpDownCounter = () => {
+export const UpDownCounter = (props) => {
  
-  let [counter, setCounter] = useState(0);
+  let [counter, setCounter] = useState(props.value);
   
   const onHandleClick = (direction) => {
     if (direction === 'up') {
