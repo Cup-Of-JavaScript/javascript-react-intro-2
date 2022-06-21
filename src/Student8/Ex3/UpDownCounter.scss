@@ -1,0 +1,39 @@
+.btn-dark-moon {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-light-moon {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000;
+    border: 3px solid #eee;
+}
+
+.btn-fab {
+    height: 50px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.UpDown {
+    margin: 200px;
+    padding-top: 80px;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 45%;
+    border: 5px solid black;
+
+}
+
+.Boxed {
+    border: 3px solid black;
+    font-size: xx-large;
+    background-color: black;
+    color: white
+  } 
