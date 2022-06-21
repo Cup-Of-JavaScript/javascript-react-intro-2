@@ -1,7 +1,7 @@
 import React, { useState}  from 'react'
 
 export const DateFetcher = () => {
-    const [date, setDate] = useState("unknown")
+    const [date, setDate] = useState('Unknown')
 
     const onHandleClick = () => {
         let time = new Date().toUTCString();
