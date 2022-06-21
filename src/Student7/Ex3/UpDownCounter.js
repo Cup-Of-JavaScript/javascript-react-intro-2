@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const UpDownCounter = () => {
  
-  let [setCounter, counter] = useState(0);
+  let [counter, setCounter] = useState(0);
   
   const onHandleClick = (direction) => {
     if (direction === 'up') {
