@@ -9,14 +9,16 @@ export const MinMaxCounter = () => {
   const onHandleClick = (direction) => {
     if (direction === "up") {
       setCounter(++counter);
-    }
-    if (counter > min) {
-      setMax((min = counter));
+      if (counter > max) {
+        setMax(counter);
+      }
+    } else {
+      setCounter(--counter);
     }
     if (direction === "down") {
       setCounter(--counter);
       if (counter < min) {
-        setMin((min = counter));
+        setMin(counter);
       }
     }
   };
