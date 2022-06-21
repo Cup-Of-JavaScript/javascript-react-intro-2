@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './DateFetcher.scss'
 
 export const DateFetcher = () => {
   const [date, setDate] = useState("unknown");
@@ -10,8 +11,8 @@ export const DateFetcher = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => onHandleClick()}>Push</button> UTC Date: {date}
+    <div className = 'fetch'>
+      <button className = 'button' onClick={() => onHandleClick()}>Push</button> UTC Date: {date}
     </div>
   );
 };
