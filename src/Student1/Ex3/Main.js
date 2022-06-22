@@ -4,8 +4,8 @@ import './Main.css'
 
 export const Main = () => {
   return (
-    <div>
-      <UpDownCounter/>
+    <div className="Main">
+      <UpDownCounter value={4} /> 
     </div>
   )
 }

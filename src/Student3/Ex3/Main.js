@@ -1,4 +1,5 @@
 import React from 'react'
+import { UpDownCounter } from './UpDownCounter'
 import './Main.css'
 import { UpDownCounter } from './UpDownCounter'
 

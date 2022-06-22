@@ -1,10 +1,13 @@
 import React from 'react'
-import './Main.css'
+import './Main.scss'
+import { UpDownCounter } from './UpDownCounter'
+
 
 export const Main = () => {
   return (
-    <div>
-      TODO...
+    <div className="Main">
+      <UpDownCounter value={4}/>
     </div>
   )
 }
+

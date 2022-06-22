@@ -1,0 +1,41 @@
+.updowncounter {
+  align-content: center;
+  text-align: center;
+  padding: 200px;
+  font-size: x-large;
+}
+.downbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fa0606;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.downbutton:active {
+  background-color: #fa0606;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.upbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #075d0a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.upbutton:active {
+  background-color: #075d0a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

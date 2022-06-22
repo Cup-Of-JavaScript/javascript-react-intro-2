@@ -1,0 +1,22 @@
+.tencounter{
+    align-content: center;
+    text-align: center;
+    padding: 250px;
+    font-size: x-large;
+}
+
+.button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    font-size: 50px;
+    padding: 14px 40px;
+    border-radius: 12px;
+    
+}
+
+  
+  .button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
