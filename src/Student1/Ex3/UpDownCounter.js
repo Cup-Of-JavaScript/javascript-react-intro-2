@@ -2,19 +2,20 @@ import React from 'react'
 import { useState } from 'react'
 import './UpDownCounter.scss'
 
-export const UpDownCounter = (direction) => {
-    let [upDownButton, setUpDownButton] = useState(0)
+export const UpDownCounter = (props) => {
+    let [counter, setCounter] = useState(props.value) 
+  
     const upDownHandler = (direction) => {
         if (direction === 'decrease') {
-            setUpDownButton(++upDownButton)
+            setCounter(++counter)
         } else if (direction === 'increase') {
-            setUpDownButton(--upDownButton)
+            setCounter(--counter)
         }
     }
     return (
         <div>
             <button onClick={() => { upDownHandler('increase') }}>Down</button>
-            {upDownButton}
+            {counter}
             <button onClick={() => { upDownHandler('decrease') }}>Up</button>
         </div>
 
