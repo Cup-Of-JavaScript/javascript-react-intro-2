@@ -1,10 +1,13 @@
 import React from 'react'
 import './Main.scss'
 import { MinMaxCounter } from './MinMaxCounter'
+
+
+
 export const Main = () => {
   return (
-    <div>
-      <MinMaxCounter />
+    <div className="Main">
+      <MinMaxCounter/>
     </div>
   )
 }
