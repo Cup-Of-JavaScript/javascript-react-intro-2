@@ -17,7 +17,6 @@ const CarCounter = () => {
         setChevy(++chevy);
     }
 
-
     return (
         <div>
             <button onClick={() => onHandleClickFord()}>Ford</button>
@@ -28,10 +27,6 @@ const CarCounter = () => {
             Toyota: {toyota}<br />
             Chevy: {chevy}<br />
             TOTAL:  {total}
-
-
-
-
         </div>
     )
 }
