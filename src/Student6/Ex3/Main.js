@@ -4,7 +4,7 @@ import { UpDownCounter } from './UpDownCounter'
 export const Main = () => {
   return (
     <div>
-      <UpDownCounter />
+      <UpDownCounter value={1000}/>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-export const UpDownCounter = () => {
-    let [counter, setCounter] = useState(0);
+export const UpDownCounter = (props) => {
+    let [counter, setCounter] = useState(props.value);
 
     return (
         <div>
