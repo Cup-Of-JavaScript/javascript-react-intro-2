@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import './UpDownCounter.scss'
 
-export const UpDownCounter = () => {
-  let [count, setCount] = useState(0);
+export const UpDownCounter = (props) => {
+  let [count, setCount] = useState(props.value);
 
-  const onHandleClick = (direction) => {
+ const onHandleClick = (direction) => {
     if (direction === "down") {
       setCount(--count);
     } else {
@@ -13,10 +14,10 @@ export const UpDownCounter = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => onHandleClick("down")}>Down</button>
+    <div className = 'updowncounter'>
+      <button className= 'downbutton'onClick={() => onHandleClick("down")}>Down</button>
       {count}
-      <button onClick={() => onHandleClick("up")}>Up</button>
+      <button className= 'upbutton' onClick={() => onHandleClick("up")}>Up</button>
     </div>
   );
 };

@@ -1,0 +1,46 @@
+.MinMax {
+    font-size:5em  ;
+}
+
+.counter {
+    font-size: 50px;
+}
+.button-down {
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border: 0;
+    
+}
+
+.button-up {
+    background-color: green;
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border: 0;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em;
+    margin: 5px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+
+.middle {
+    background: lightgrey;
+    padding: 100px;
+    text-align: center;
+    font-weight: bold;
+}

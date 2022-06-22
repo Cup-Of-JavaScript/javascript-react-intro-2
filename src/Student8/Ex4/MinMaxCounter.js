@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react'
+import './MinMaxCounter.scss'
+
 
 export const MinMaxCounter = () => {
     let [counter, setCounter] = useState(0)
@@ -21,12 +23,23 @@ export const MinMaxCounter = () => {
     }
 
     return (
-        <div>
-            <button onClick={() => subHandle()}>Down</button>
-            <span>{counter}</span>
-            <button onClick={() => addHandle()}>Up</button>
-            <p>Min: {lowest}   </p>
-            <p>Max: {highest}</p>
+        <div className="middle">
+            <div className="box">
+                <div className="MinMax">
+               
+                    <h1>Which way do you want to go?</h1>
+                    <h2>Up?  or Down??</h2>
+                    <p className='counter'>
+                    {counter}</p>
+                    
+                    <button className="button-down" onClick={() => subHandle()}>-</button>
+                    <button className="button-up" onClick={() => addHandle()}>+</button>
+                    <p>Min: {lowest}  
+                    &nbsp;Max: {highest}</p>
+                </div>
+            </div>
         </div>
+
+
     )
 }

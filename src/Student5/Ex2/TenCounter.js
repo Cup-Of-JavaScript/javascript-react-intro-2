@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './TenCounter.scss'
 
 export const TenCounter = () => {
   let [counter, setCounter] = useState(0);
@@ -11,8 +12,8 @@ export const TenCounter = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => onClick()}>Push</button> Counter: {counter}
+    <div className = 'tencounter'>
+      <button className = 'button' onClick={() => onClick()}>Push</button> Counter: {counter}
     </div>
   );
 };
