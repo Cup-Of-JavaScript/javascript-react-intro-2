@@ -1,23 +1,23 @@
 import { React, useState } from 'react'
 
 export const CarCounter = () => {
-    let [Fordcar, setFordcar] = useState(0);
-    let [Toycar, setToycar] = useState(0);
-    let [Chevycar, setChevycar] = useState(0);
+    let [fordcar, setfordcar] = useState(0);
+    let [toycar, settoycar] = useState(0);
+    let [chevycar, setchevycar] = useState(0);
     let [counter, setCounter] = useState(0);
 
-    const Ford = () => {
-        setFordcar(++Fordcar)
+    const ford = () => {
+        setFordcar(++fordcar)
         setCounter(++counter);
     }
 
     const Toyota = () => {
-        setToycar(++Toycar)
+        set=toycar(++toycar)
         setCounter(++counter);
     }
 
     const Chevy = () => {
-        setChevycar(++Chevycar)
+        setchevycar(++chevycar)
         setCounter(++counter);
     }
 
@@ -27,9 +27,9 @@ export const CarCounter = () => {
             <button onClick={Toyota}>Toyota</button>
             <button onClick={Chevy}>Chevy</button>
             <br />
-            <br /> Ford: {Fordcar} <br />
-            <br /> Toyota: {Toycar} <br />
-            <br /> Chevy: {Chevycar} <br />
+            <br /> Ford: {fordcar} <br />
+            <br /> Toyota: {toycar} <br />
+            <br /> Chevy: {chevycar} <br />
             <br /> Total: {counter}
         </div>
     )
