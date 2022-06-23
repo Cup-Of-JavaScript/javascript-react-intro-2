@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export const NumberBuilder = () => {
     let [counter, setCounter] = useState(0);
-    const [numbers, setNumbers] = useState([])
+    const [numbers, setNumbers] = useState(" ")
 
     const onHandleClick = () => {
        setCounter(++counter);
@@ -12,7 +12,7 @@ export const NumberBuilder = () => {
     }
 
     const onReset = () => {
-        setNumbers([]);
+        setNumbers(" ");
         setCounter(0)
     }
 
