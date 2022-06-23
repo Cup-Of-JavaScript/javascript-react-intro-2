@@ -7,7 +7,7 @@ export const CarCounter = () => {
     let [counter, setCounter] = useState(0);
 
     const ford = () => {
-        setFordcar(++fordcar)
+        setfordcar(++fordcar)
         setCounter(++counter);
     }
 
