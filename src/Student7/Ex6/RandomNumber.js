@@ -3,20 +3,19 @@ import { useState } from "react";
 
 export const RandomNumber = () => {
 
-  let [count, setCount] = useState(0);
+  let [num, setNum] = useState(0);
 
 
-  const onHandleClick = (command) => {
-    // if(command === 'random'){
-    //   setCount(++count);
-    //   numbers.push(count)
-    // }
+  const onHandleClick = (action) => {
+    if(action === 'random'){
+      setNum(Math.floor(Math.random()* 10));
+    }
 
   };
 
   return (
     <div>
-      Random Number: {count}
+      Random Number: {num}
       <br />
       <button onClick={() => onHandleClick('random')}>Generate</button>
     </div>
