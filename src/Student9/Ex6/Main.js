@@ -1,10 +1,10 @@
 import React from 'react'
-import './Main.css'
+import {RandomNumber} from './RandomNumber.js'
 
 export const Main = () => {
   return (
     <div>
-      TODO...
+      <RandomNumber />
     </div>
   )
 }
