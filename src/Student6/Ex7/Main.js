@@ -1,10 +1,11 @@
 import React from 'react'
-import './Main.css'
+import {CarCounter} from './CarCounter'
+import './Main.scss'
 
 export const Main = () => {
   return (
     <div>
-      TODO...
+      <CarCounter />
     </div>
   )
 }
