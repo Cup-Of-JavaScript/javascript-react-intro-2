@@ -1,10 +1,10 @@
 import React from 'react'
-import './Main.css'
-
+import './Main.scss'
+import { NumberBuilder } from './NumberBulider'
 export const Main = () => {
   return (
     <div>
-      TODO...
+      <NumberBuilder/>
     </div>
   )
 }
