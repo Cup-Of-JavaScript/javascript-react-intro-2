@@ -17,7 +17,7 @@ const AddCalculator = () => {
         setThree(++addThree)
     }
 
-    let total = addOne + (addTwo * 2) + (addThree * 2)
+    let total = addOne + (addTwo * 2) + (addThree * 3)
     return (
         <div>
             <button onClick={() => addHandlerOne()}>Add 1</button>
