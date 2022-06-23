@@ -29,7 +29,7 @@ export const NumberBuilder = () => {
       <button onClick={() => onHandleClick('add')}>Add Number</button>
       <button onClick={() => onHandleClick2('reset')}>Reset</button>
       <br />
-      Numbers: {setNumbers.toString}
+      Numbers: {numbers.join('')}
     </div>
   )
 }
