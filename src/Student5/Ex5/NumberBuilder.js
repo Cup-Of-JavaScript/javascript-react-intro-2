@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
+import './NumberBuilder.scss'
 
 export const NumberBuilder = () => {
   let numberRef = useRef(0);
@@ -21,9 +22,9 @@ export const NumberBuilder = () => {
     setNumbers([]);
   };
   return (
-    <div>
-      <button onClick={() => onHandleClick()}>Add Number</button>
-      <button onClick={() => onReset()}>Reset</button>
+    <div className = "numberbuilder">
+      <button className = "add" onClick={() => onHandleClick()}>Add Number</button>
+      <button className = "reset" onClick={() => onReset()}>Reset</button>
       <div>
         Number:
         {numbers.map((number) => (
