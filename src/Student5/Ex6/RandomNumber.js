@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './RandomNumber.scss'
 
 export const RandomNumber = () => {
   let [number, setNumber] = useState(0);
@@ -9,12 +10,12 @@ export const RandomNumber = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="randomnumber">
+      <div className="number">
         Random Number:
         <span>{number}</span>
       </div>
-      <button onClick={() => onHandleClick()}>Generate</button>
+      <button className = "button" onClick={() => onHandleClick()}>Generate</button>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { RandomNumber } from './RandomNumber'
 
 export const Main = () => {
   return (
-    <div>
+    <div className = "Main">
       <RandomNumber/>
     </div>
   )
