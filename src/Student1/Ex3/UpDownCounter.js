@@ -15,7 +15,7 @@ export const UpDownCounter = (props) => {
     return (
         <div>
             <button onClick={() => { upDownHandler('increase') }}>Down</button>
-            {counter}
+            &nbsp; {counter} &nbsp;
             <button onClick={() => { upDownHandler('decrease') }}>Up</button>
         </div>
 
