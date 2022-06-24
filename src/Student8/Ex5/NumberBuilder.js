@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './NumberBuilder.scss'
 
 export const NumberBuilder = () => {
     let [num, numAdd] = useState(0);
@@ -16,10 +17,10 @@ export const NumberBuilder = () => {
 
     return (
         <div>
-            <button onClick={() => addHandler()}>Add Number</button>
-            <button onClick={() => resetHandler()}>Reset</button>
-            <br />
-            Numbers: {numString.join(' ')}
+            <button className="brk-btn" onClick={() => addHandler()}>Add Number</button>
+            <button className="brk-btn2" onClick={() => resetHandler()}>Reset</button>
+            
+            <p>Numbers: {numString.join(' ')}</p>
         </div>
     )
 }
