@@ -1,0 +1,19 @@
+button {
+    border-radius: 25px;
+    border: 1px dashed;
+    width: 75px;
+    height: 40px;
+    padding: 0;
+    background-color: #f08080;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:#f08080; left:0px; top:0px;}
+    25%  {background-color:#f4978e; left:200px; top:0px;}
+    50%  {background-color:#f8ad9d; left:200px; top:200px;}
+    75%  {background-color:#fbc4ab; left:0px; top:200px;}
+    100% {background-color:#ffdab9; left:0px; top:0px;}
+  }
