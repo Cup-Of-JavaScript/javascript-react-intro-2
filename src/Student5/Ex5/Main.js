@@ -1,10 +1,11 @@
-import React from 'react'
-import './Main.css'
+import React from "react";
+import { NumberBuilder } from "./NumberBuilder.js";
+import "./Main.css";
 
 export const Main = () => {
   return (
     <div>
-      TODO...
+      <NumberBuilder />
     </div>
-  )
-}
+  );
+};
