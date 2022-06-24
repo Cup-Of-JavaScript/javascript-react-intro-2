@@ -1,9 +1,9 @@
-import { CarCounter } from './CarCounter'
+import { Counter } from './Counter'
 import './Main.scss'
 export const Main = () => {
   return (
     <div>
-      <CarCounter />
+      <Counter />
     </div>
   )
 }
