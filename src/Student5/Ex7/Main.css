@@ -2,8 +2,9 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
 }
 
 body {
-    background-color: lightgray
+    background-color: rgb(248, 241, 241);
 }

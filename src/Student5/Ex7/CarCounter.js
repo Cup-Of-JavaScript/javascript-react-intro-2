@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './CarCounter.scss'
 
 export const CarCounter = () => {
   let [counter1, setCounter1] = useState(0);
@@ -17,10 +18,10 @@ export const CarCounter = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => onHandleClick1()}>Ford</button>
-      <button onClick={() => onHandleClick2()}>Toyota</button>
-      <button onClick={() => onHandleClick3()}>Chevy</button>
+    <div className="carcounter">
+      <button className = "car" onClick={() => onHandleClick1()}>Ford</button>
+      <button className = "car" onClick={() => onHandleClick2()}>Toyota</button>
+      <button className = "car" onClick={() => onHandleClick3()}>Chevy</button>
       <div>Ford:{counter1}</div>
       <div>Toyota:{counter2}</div>
       <div>Chevy:{counter3}</div>
