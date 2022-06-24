@@ -4,7 +4,7 @@ import "./Main.css";
 
 export const Main = () => {
   return (
-    <div>
+    <div className= "Main">
       <NumberBuilder />
     </div>
   );
