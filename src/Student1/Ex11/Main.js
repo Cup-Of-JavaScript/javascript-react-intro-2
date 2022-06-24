@@ -1,11 +1,11 @@
 import React from 'react'
-import { Timer } from './Timer'
-import './Main.css'
+import { Counter } from './Counter'
+import './Main.scss'
 
 export const Main = () => {
   return (
     <div>
-      <Timer/>
+        <Counter/>
     </div>
   )
 }
